@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Business Odyssey</title>
+</head>
+<body style="background-color:lightblue ">
+
+    // title
+    <div align="center" style="background-color:aliceblue">
+        <font color="black" face="arial" size="10">
+            <label><b>Business Odyssey</b></label><br />
+        </font>
+        <font color="red" face="arial" size="5">
+            <label><b><u>Voting</u></b></label>
+        </font>
+    </div>
+
+    <script type="text/javascript">
+    function vote() {
+
+
+    }
+    </script>
+    <div>
+        <input type="radio" name="group1" value="Group Bobby" onclick="vote"> Bobby
+        <br>
+        <input type="radio" name="group1" value="Group Pumpkin"> Pumpkin
+        <br>
+        <input type="radio" name="group1" value="Group "> Minx
+        <br>
+        <input type="radio" name="group1" value="Group Pumpkin"> BestGroupEver
+        <br>
+    </div>
+</body>
+</html>
+
+<html>
+<head>
+    <script type="text/javascript">
+function checkmyconnect()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","connect.php",true);
+xmlhttp.send();
+}
+    </script>
+</head>
+<body>
+    <h2>Let Connect to mysql in html file</h2>
+    <div id="myDiv">No connection</div>
+    <button type="button" önclick="checkmyconnect()">Check Mysql connection</button>
+
+</body>
+</html>
